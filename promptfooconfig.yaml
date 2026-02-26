@@ -1,0 +1,21 @@
+description: "AI Test Case Generator Evaluation"
+
+prompts:
+  - id: test-generator
+    prompt: "Generate test cases from user story"
+
+providers:
+  - id: file://./helper.py
+    label: "Local Python Generator"
+
+tests: dataset/login.yaml
+
+defaultTest:
+  assert:
+    - type: is-json
+    - type: contains
+      value: "positive"
+    - type: contains
+      value: "negative"
+    - type: contains
+      value: "edge"

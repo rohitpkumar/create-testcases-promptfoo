@@ -1,0 +1,21 @@
+- description: "Flow 1 - New User Sign Up"
+  vars:
+    scenario: SIGNUP
+    user_story: |
+      As a new user, I want to sign up so that I can create an account.
+    acceptance_criteria: |
+      - User must enter name, email, and password
+      - Email must be unique
+      - Password must be at least 8 characters
+      - Successful signup redirects to Home page
+
+- description: "Flow 2 - Registered User Login"
+  vars:
+    scenario: LOGIN
+    user_story: |
+      As a registered user, I want to log in so that I can access my account.
+    acceptance_criteria: |
+      - User must enter email and password
+      - System must validate credentials
+      - Error message shown for invalid login
+      - Successful login redirects to Home page
