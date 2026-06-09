@@ -19,3 +19,5 @@ defaultTest:
       value: "negative"
     - type: contains
       value: "edge"
+redteam:
+  config: promptfooconfig.redteam.yaml
